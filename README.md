@@ -103,7 +103,6 @@ The application processes raw ticket data through several stages:
 
 Generates structured storytelling summaries for each product group:
 
-- **LLM Integration**: Uses OpenAI GPT-3.5-turbo for natural language generation
 - **Structured Output**: Divides summaries into 5 sections:
   1. Initial Issue
   2. Follow-ups
@@ -209,36 +208,7 @@ Creates all charts and visualizations.
 - **KAV (Voice)**: Signal quality monitoring
 - **VOD (Video)**: Content delivery optimization
 
-## 🚨 Troubleshooting
 
-### Common Issues
-
-1. **File Upload Errors**
-   - Ensure file format is correct (TXT or CSV)
-   - Check that required columns are present
-   - Verify file encoding (UTF-8 recommended)
-
-2. **LLM API Issues**
-   - Verify OpenAI API key is correct
-   - Check internet connection
-   - Ensure API key has sufficient credits
-
-3. **Visualization Problems**
-   - Refresh the page if charts don't load
-   - Check browser console for JavaScript errors
-   - Ensure data contains valid datetime values
-
-### Performance Tips
-
-- Use smaller datasets for faster processing
-- Close other browser tabs to free up memory
-- Restart the application if it becomes slow
-
-## 🔒 Security Considerations
-
-- **API Key Protection**: API keys are stored in session state only
-- **Data Privacy**: Uploaded files are processed locally and not stored permanently
-- **Input Validation**: All user inputs are validated and sanitized
 
 ## 🚀 Future Enhancements
 
@@ -263,4 +233,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-**Built with ❤️ using Streamlit, Pandas, Plotly, and OpenAI GPT**
+**Built with ❤️ using Streamlit, Pandas, Plotly, Ollama**
